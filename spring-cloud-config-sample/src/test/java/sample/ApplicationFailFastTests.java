@@ -18,7 +18,7 @@ public class ApplicationFailFastTests {
                             "--spring.cloud.config.uri=http://server-host-doesnt-exist:1234");
             fail("failFast option did not produce an exception");
         } catch (Exception e) {
-            assertTrue("Exception not caused by fail fast", e.getMessage().contains("fail fast"));
+            assertTrue("Exception not caused by fail-fast", e.getMessage().contains("fail fast"));
         }
     }
 
